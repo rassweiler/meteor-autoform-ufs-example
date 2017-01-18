@@ -38,3 +38,5 @@ jspm_packages
 
 # Local Packages
 packages/
+tmp/
+files/
