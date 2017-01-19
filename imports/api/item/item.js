@@ -56,6 +56,8 @@ export const ImageStore = new UploadFS.store.Local({
 	collection: Files,
 	name: 'imageStore',
 	path: 'C:\\Users\\krassweiler\\Desktop\\meteor-autoform-ufs-example\\files',
+	mode: '0744', // directory permissions
+    writeMode: '0744', // file permissions
 	permissions: new UploadFS.StorePermissions({
 		insert: function (userId, doc) {
 			return userId;
