@@ -45,6 +45,19 @@ Item.attachSchema(Item.schema);
 // Collection to hold the file data
 export const Files = new Mongo.Collection('Files');
 
+//Test for determining issue with denied access
+Files.deny({
+	insert() { return false; },
+	update() { return false; },
+	remove() { return false; },
+});
+
+Files.allow({
+	insert() { return true; },
+	update() { return true; },
+	remove() { return true; },
+});
+
 // Use HTTPS in URLs
 UploadFS.config.https = false
 

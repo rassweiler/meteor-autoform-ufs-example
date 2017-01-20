@@ -1,1 +1,6 @@
 /* CSS declarations go here */
+
+.images img{
+	width:150px;
+	height:auto;
+}

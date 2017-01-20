@@ -15,8 +15,16 @@
 
 <template name="Items">
 	<h2>Items:</h2>
-	{{#each Items}}
-		{{name}}: {{_id}}
-		<img src="{{picture}}">
-	{{/each}}
+	<div class="items">
+		{{#each Items}}
+		<div class="item">
+			{{name}}: {{_id}}
+			<div class="images">
+				{{#each getFiles picture}}
+				<img src="{{url}}" title="{{name}}">
+				{{/each}}
+			</div>
+		</div>
+		{{/each}}
+	</div>
 </template>

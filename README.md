@@ -9,6 +9,6 @@ Example project for: https://github.com/rassweiler/meteor-autoform-ufs
 - run with meteor cmd
 
 ## TODO
-- Get master working
-- Do cleanup in dev
+- ~~Get master working~~
+- ~~Do cleanup in dev~~
 - Set file locations to relative
